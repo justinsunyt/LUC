@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - LUC</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <ul class="nav-ul">
+                <li><a href="/index.html">Home</li>
+                <li><a href="/Pages/join.html">Join</a></li>
+                <li><a href="/Pages/about.html"><b>About</b></a></li>
+                <li><a href="/Pages/leaders.html">Leaders</a></li>
+                <li><a href="/Pages/alumni.html">Alumni</a></li>
+                <li><a href="/Pages/gallery.html">Gallery</a></li>
+                <li><a href="/Pages/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <nav id="mobile-nav">
+            <ul class="mobile-nav-ul">
+                <li><a href="/index.html">Home</li>
+                <li><a href="/Pages/join.html">Join</a></li>
+                <li><a href="/Pages/about.html"><b>About</b></a></li>
+                <li><a href="/Pages/leaders.html">Leaders</a></li>
+                <li><a href="/Pages/alumni.html">Alumni</a></li>
+                <li><a href="/Pages/gallery.html">Gallery</a></li>
+                <li><a href="/Pages/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <button id="mobile-burger">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+    </header>
+    <section>
+        <div class="about-mission-statement">
+            <h1>Mission Statement</h1>
+            <p style="margin-top: 20px;">Leaders United for Change is an organization led completely by students who work to help the community by sharing their talents. We help students discover their identity, solidify their independence, and promote their diligence through selfless service.</p>
+        </div>
+        <div class="about-message-container">
+            <center><h1>Greetings from the President</h1></center>
+            <div class="about-message">
+                <img src="/Images/About/Lyon Chung_Large.png" class="about-message-img">
+                <div class="about-message-text">
+                    <p>   My name is Lyon Ui Chung, and I am a junior at Harvard Westlake. I created this organization on March 2019 in hopes that students could share their talents with their community. In my case, I played the violin and thus I created a small ensemble with friends at my school orchestra to play at nursing homes and hospitals—sharing live music with those who could not move to other areas.</p>
+                    <p style="margin-top: 40px;">   On September 2019, I created a mentoring service for young students at our community as I realized that the knowledge of students was a gift that everyone could share.  Initially, there were only five mentors and five students teaching at a small office. Fortunately, there were many more students who wished to be mentored and many more mentors who wished to share their knowledge with others! As the number of our members increased, I reached out to various schools, churches, and gyms that could offer their spaces to us. While many locations were unable to offer their spaces free of charge, I talked to an executive pastor who allowed me to talk to the board of his church. After presenting a speech with our goals and the necessity of a space, that local church of our community positively viewed our goals gratefully shared their space to us—allowing us to fit more mentors and students. Consequently, before social distancing because of the coronavirus, we had over seventy mentors and students!</p>
+                    <p style="margin-top: 40px;">   Unfortunately, we are currently mentoring through Zoom because we cannot all meet at location, and I am proud to say we have over a hundred mentors who are passionately teaching their students. We meet every Saturday from 6 to 7 Pacific Time and teach all subjects on which students want help or wish to improve. We also teach Passion Classes on nonacademic subjects such as Journalism, Machine Learning, Computer Science, and Parliamentary Debate. Please contact me at 2137004746 or lchung1@hwemail.com to join as a student or a mentor! We will welcome you with open hands!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="https://www.instagram.com/leadersunitedforchange/" target="_blank"><img src="/Images/Logos/Instagram.svg"></a></li>
+            <li><a href="https://www.facebook.com/Leaders-United-for-Change-101677741498621/" target="_blank"><img src="/Images/Logos/Facebook.svg"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCiyQ4vOi9M4b1-pVWH7xVTA" target="_blank"><img src="/Images/Logos/YouTube.svg"></a></li>
+            <li><a href="mailto:leadersunitedforchange@gmail.com" target="_blank"><img src="/Images/Logos/Gmail.svg"></a></li>
+        </ul>
+        <p>Copyright ©2020 All rights reserved</p>
+    </footer>
+    <script>
+        window.onscroll = () => scrollFunction()
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 60) {
+                document.getElementById("nav").classList.add("nav-scrolled")
+            } else {
+                document.getElementById("nav").classList.remove("nav-scrolled")
+            }
+        }
+        document.getElementById("mobile-burger").addEventListener("click", () => {
+            document.getElementById("mobile-nav").classList.toggle("mobile-nav-show")
+        })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+</body>
+</html>

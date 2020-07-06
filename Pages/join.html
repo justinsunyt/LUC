@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - LUC</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <ul class="nav-ul">
+                <li><a href="/index.html">Home</li>
+                <li><a href="/Pages/join.html"><b>Join</b></a></li>
+                <li><a href="/Pages/about.html">About</a></li>
+                <li><a href="/Pages/leaders.html">Leaders</a></li>
+                <li><a href="/Pages/alumni.html">Alumni</a></li>
+                <li><a href="/Pages/gallery.html">Gallery</a></li>
+                <li><a href="/Pages/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <nav id="mobile-nav">
+            <ul class="mobile-nav-ul">
+                <li><a href="/index.html">Home</li>
+                <li><a href="/Pages/join.html"><b>Join</b></a></li>
+                <li><a href="/Pages/about.html">About</a></li>
+                <li><a href="/Pages/leaders.html">Leaders</a></li>
+                <li><a href="/Pages/alumni.html">Alumni</a></li>
+                <li><a href="/Pages/gallery.html">Gallery</a></li>
+                <li><a href="/Pages/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <button id="mobile-burger">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+    </header>
+    <section>
+        <h1 class="header">Join LUC!</h1>
+        <div class="join-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBmBv_IehqGJxrXPOw51q0IEVY1VFHwz-x3HQfL3gnqAk_wg/viewform?embedded=true" width="640" height="2500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcXfsQlZWgpk6CmrYqd6Zg5DyIWsU0TZjKIYsnGal44c4HnA/viewform?embedded=true" width="640" height="2500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="https://www.instagram.com/leadersunitedforchange/" target="_blank"><img src="/Images/Logos/Instagram.svg"></a></li>
+            <li><a href="https://www.facebook.com/Leaders-United-for-Change-101677741498621/" target="_blank"><img src="/Images/Logos/Facebook.svg"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCiyQ4vOi9M4b1-pVWH7xVTA" target="_blank"><img src="/Images/Logos/YouTube.svg"></a></li>
+            <li><a href="mailto:leadersunitedforchange@gmail.com" target="_blank"><img src="/Images/Logos/Gmail.svg"></a></li>
+        </ul>
+        <p>Copyright ©2020 All rights reserved</p>
+    </footer>
+    <script>
+        window.onscroll = () => scrollFunction()
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 60) {
+                document.getElementById("nav").classList.add("nav-scrolled")
+            } else {
+                document.getElementById("nav").classList.remove("nav-scrolled")
+            }
+        }
+        document.getElementById("mobile-burger").addEventListener("click", () => {
+            document.getElementById("mobile-nav").classList.toggle("mobile-nav-show")
+        })
+    </script>
+</body>
+</html>
