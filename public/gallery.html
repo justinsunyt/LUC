@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - LUC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd1b65fcd8.js" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.2/css/lightgallery.css"/>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <ul class="nav-ul">
+                <li><a href="index.html">Home</li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="leaders.html">Leaders</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="gallery.html"><b>Gallery</b></a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <nav id="mobile-nav">
+            <ul class="mobile-nav-ul">
+                <li><a href="index.html">Home</li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="leaders.html">Leaders</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="gallery.html"><b>Gallery</b></a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <button id="mobile-burger">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+    </header>
+    <section>
+        <h1 class="header">Gallery</h1>
+        <div class="gallery-youtube">
+            <a href="https://www.youtube.com/channel/UCiyQ4vOi9M4b1-pVWH7xVTA" target="_blank"><img style="width: 30px; height: 30px;"src="Images/Logos/YouTube.svg"></a>
+        </div>
+        <div id="gallery" class="gallery-container">
+            <a href="Images/Gallery/Ethan Lachman and Hannah Han.jpg"><img class="gallery-img" src="Images/Gallery/Ethan Lachman and Hannah Han.jpg"></a>
+            <a href="Images/Gallery/Screen Shot 2020-05-02 at 7.24.46 PM.jpeg"><img class="gallery-img" src="Images/Gallery/Screen Shot 2020-05-02 at 7.24.46 PM.jpeg"></a>
+            <a href="Images/Gallery/FullSizeRender.jpeg"><img class="gallery-img" src="Images/Gallery/FullSizeRender.jpeg"></a>
+            <a href="Images/Gallery/Grace Shin.png"><img class="gallery-img" src="Images/Gallery/Grace Shin.png"></a>
+            <a href="Images/Gallery/Image 5-30-20 at 6.46 PM.jpeg"><img class="gallery-img" src="Images/Gallery/Image 5-30-20 at 6.46 PM.jpeg"></a>
+            <a href="Images/Gallery/image001.png"><img class="gallery-img" src="Images/Gallery/image001.png"></a>
+            <a href="Images/Gallery/IMG_2711.png"><img class="gallery-img" src="Images/Gallery/IMG_2711.png"></a>
+            <a href="Images/Gallery/Ayla Mandel.jpeg"><img class="gallery-img" src="Images/Gallery/Ayla Mandel.jpeg"></a>
+            <a href="Images/Gallery/Derek Schneider.png"><img class="gallery-img" src="Images/Gallery/Derek Schneider.png"></a>
+            <a href="Images/Gallery/IMG_7106.jpeg"><img class="gallery-img" src="Images/Gallery/IMG_7106.jpeg"></a>
+            <a href="Images/Gallery/Katharine Steers.jpeg"><img class="gallery-img" src="Images/Gallery/Katharine Steers.jpeg"></a>
+            <a href="Images/Gallery/Lily Saada.png"><img class="gallery-img" src="Images/Gallery/Lily Saada.png"></a>
+            <a href="Images/Gallery/Rohan II.jpeg"><img class="gallery-img" src="Images/Gallery/Rohan II.jpeg"></a>
+            <a href="Images/Gallery/Screen Shot 2020-05-30 at 6.25.03 PM.jpeg"><img class="gallery-img" src="Images/Gallery/Screen Shot 2020-05-30 at 6.25.03 PM.jpeg"></a>
+            <a href="Images/Gallery/Screen Shot 2020-05-30 at 6.48.31 PM.jpeg"><img class="gallery-img" src="Images/Gallery/Screen Shot 2020-05-30 at 6.48.31 PM.jpeg"></a>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="https://www.instagram.com/leadersunitedforchange/" target="_blank"><img src="Images/Logos/Instagram.svg"></a></li>
+            <li><a href="https://www.facebook.com/Leaders-United-for-Change-101677741498621/" target="_blank"><img src="Images/Logos/Facebook.svg"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCiyQ4vOi9M4b1-pVWH7xVTA" target="_blank"><img src="Images/Logos/YouTube.svg"></a></li>
+            <li><a href="mailto:leadersunitedforchange@gmail.com" target="_blank"><img src="Images/Logos/Gmail.svg"></a></li>
+        </ul>
+        <p>Copyright ©2020 All rights reserved</p>
+    </footer>
+    <script>
+        window.onscroll = () => scrollFunction()
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 60) {
+                document.getElementById("nav").classList.add("nav-scrolled")
+            } else {
+                document.getElementById("nav").classList.remove("nav-scrolled")
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.2/js/lightgallery-all.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("#gallery").lightGallery({
+                download: false,
+                hideBarsDelay: 3000,
+                share: false
+            })
+        })  
+        document.getElementById("mobile-burger").addEventListener("click", () => {
+            document.getElementById("mobile-nav").classList.toggle("mobile-nav-show")
+        })
+    </script>
+</body>
+</html>

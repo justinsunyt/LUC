@@ -293,7 +293,6 @@ body {
 .nav-ul {
     display: flex;
     flex-direction: row;
-    max-width: 500px;
     transition: all 0.3s;
 }
 
